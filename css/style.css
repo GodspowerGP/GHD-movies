@@ -3,6 +3,7 @@
 .sticky-top {
     top: -150px;
     transition: .5s;
+    background-color: rgba(22, 22, 28, 1);
 }
 
 .navbar {
@@ -168,4 +169,66 @@
     color: rgba(160, 160, 160, 1);
     max-width: 800px !important;
     margin-left: 44px;
+}
+
+.banner {
+    position: relative;
+    height: 300px; /* Adjust height as needed */
+    text-align: center;
+    color: white; /* Text color */
+  }
+  .banner-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('/img/ghd\ wallpaper.png');
+    background-size: cover;
+    background-position: center;
+    opacity: 0.7; /* Reduce opacity */
+  }
+  .banner-content {
+    position: relative;
+    z-index: 1; /* Ensure content appears above the overlay */
+    padding-top: 50px; /* Adjust top padding as needed */
+  }
+  .banner h3{
+    color: #fff;
+  }
+  .purpple{
+    color: white !important;
+}
+.purpple {
+    display: inline-block;
+    color: white !important;
+    border: 1px solid  rgba(128, 0, 128, 1);
+    border-radius: 5px;
+    padding: 9px 20px !important;
+    background: rgba(128, 0, 128, 1);
+    cursor: pointer;
+    text-align: center;
+}
+.offline .card{
+    background: rgba(39, 40, 40, 0.7);  
+}
+.offline h5{
+    color: #fff;
+    text-decoration: underline;
+    font-weight: 600;
+    font-size: 23px;
+}
+
+.checked p{
+    font-size: 12px;
+    
+}
+.checked .pup{
+    color: rgba(128, 0, 128, 1);
+    margin-right: 10px;
+}
+
+.checked .dar{
+    color: rgba(51, 51, 51, 1);
+    margin-right: 10px;
 }
