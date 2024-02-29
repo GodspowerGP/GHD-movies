@@ -83,7 +83,6 @@
         transition: .5s;
         opacity: 1;
     }
-
 }
 .bg-hero{
     background-color:rgba(22, 22, 28, 1) ;
@@ -173,7 +172,7 @@
 
 .banner {
     position: relative;
-    height: 300px; /* Adjust height as needed */
+    height: auto; /* Adjust height as needed */
     text-align: center;
     color: white; /* Text color */
   }
@@ -191,7 +190,7 @@
   .banner-content {
     position: relative;
     z-index: 1; /* Ensure content appears above the overlay */
-    padding-top: 50px; /* Adjust top padding as needed */
+    padding-top: 24px; /* Adjust top padding as needed */
   }
   .banner h3{
     color: #fff;
@@ -211,6 +210,7 @@
 }
 .offline .card{
     background: rgba(39, 40, 40, 0.7);  
+    border-radius: 20px;
 }
 .offline h5{
     color: #fff;
@@ -218,10 +218,13 @@
     font-weight: 600;
     font-size: 23px;
 }
-
+.card-text{
+    color: rgba(160, 160, 160, 1);
+    font-size: 12px;
+}
 .checked p{
     font-size: 12px;
-    
+
 }
 .checked .pup{
     color: rgba(128, 0, 128, 1);
@@ -231,4 +234,127 @@
 .checked .dar{
     color: rgba(51, 51, 51, 1);
     margin-right: 10px;
+}
+@media (max-width: 810px) {
+
+    .offline .card{
+        background: rgba(39, 40, 40, 0.7);  
+        border-radius: 20px;
+        width: 70%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+}
+
+.abt .card{
+    background-color: rgba(39, 40, 40, 1);
+    padding: 10px;
+    border-radius: 0px 50px 50px 50px;
+}
+.abt h3{
+    color: #fff;
+    font-size: 50px;
+    font-weight: 550;
+}
+.abt p{
+    color: #fff;
+    line-height: 35px;
+    font-size: 18px;
+    letter-spacing: 0.7px;
+}
+
+  .faq-container h3{
+    font-size: 40px;
+    font-weight: 600;
+    color: #fff;
+    text-align: center;
+    
+  }
+  .question {
+    
+    padding: 10px;
+    cursor: pointer;
+    
+  }
+  .question p{
+    font-size: 35px;
+    color: #fff;
+  }
+  .question hr{
+    color: #ccc;
+    height: 3px !important;
+    max-width: 517px;
+  }
+  .answer {
+    display: none;
+    padding: 10px;
+    transition: max-height 0.3s ease-out;
+    overflow: hidden;
+    max-width: 917px;
+  }
+  .answer li{
+    color: rgba(255, 196, 255, 1);
+    font-size: 22px;
+  }
+  .banner-overlays {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('/img/GHDimg.jpg');
+    background-size: cover;
+    background-position: center;
+    opacity: 0.7; 
+    border-radius: 15px;
+  }
+  .banner-contents {
+    position: relative;
+    z-index: 1;
+    padding-top: 24px;
+  }
+  .apples{
+	margin: 10px;   
+}
+.apples a{
+    width: 382px;
+    height: 100px;
+	background:  rgba(0, 0, 0, 1);
+    display: flex;
+	float: left;
+	border-radius: 10px;
+	color: #fff;
+	cursor: pointer;
+	border: 1px solid  #ccc;
+    
+}
+.apples .inlin{
+    display: inline-block;
+    line-height: 10px;
+    padding: 28px 0px 10px 26px;
+}
+.apples img{
+ width: 22%;
+ object-fit: contain;
+}
+.apples:hover{
+	filter: grayscale(100%);
+}
+.thor h4{
+    text-align: center;
+    color: #fff;
+    font-size: 35px;
+}
+.footer{
+    background: rgb(44 43 43);
+    align-items: center;
+}
+.wow a{
+    text-decoration: underline;
+    color: rgba(141, 141, 141, 1);
+    text-align: center;
+}
+.wow h5{
+    text-align: center;
 }
