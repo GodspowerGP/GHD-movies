@@ -6,6 +6,10 @@
     background-color: rgba(22, 22, 28, 1);
 }
 
+*{
+    transition: all .2s ease-in-out;
+}
+
 .navbar {
     padding: 11px 0 !important;
     height: 75px;
@@ -42,7 +46,7 @@
 }
 
 .navbar-dark .navbar-nav .nav-link.active {
-    color: rgba(0, 0, 0, 1) !important;
+    color: white !important;
 }
 
 .navbar .dropdown-toggle::after {
@@ -52,6 +56,10 @@
     font-weight: 900;
     vertical-align: middle;
     margin-left: 8px;
+}
+
+a{
+    text-decoration: none !important;
 }
 
 @media (max-width: 991.98px) {
@@ -275,10 +283,9 @@
     
     padding: 10px;
     cursor: pointer;
-    
   }
   .question p{
-    font-size: 35px;
+    font-size: 25px;
     color: #fff;
   }
   .question hr{
@@ -295,7 +302,7 @@
   }
   .answer li{
     color: rgba(255, 196, 255, 1);
-    font-size: 22px;
+    font-size: 16px;
   }
   .banner-overlays {
     position: absolute;
